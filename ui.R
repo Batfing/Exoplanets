@@ -4,15 +4,15 @@ library(shiny)
 ui <- fluidPage(
 
     # Application title 1988-2020
-    titlePanel("Discovered/confirmed exoplanets each year with discovery methos as of 23.02.2020 Data"),
-
+    titlePanel("Confirmed exoplanets each year as of 23.02.2020"),
+    
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
         sidebarPanel(
             sliderInput("bins",
                         "Number of bins:",
                         min = 1,
-                        max = thisStudyYear - firstDiscovery + 1,
+                        max = 2020 - 1988 + 1,
                         value = 30)
         ),
 
