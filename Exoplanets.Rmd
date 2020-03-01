@@ -47,9 +47,7 @@ library(ggplot2)
 exoplanet_catalog <- read_csv("data/exoplanet.eu_catalog.csv")
         e <- ggplot(exoplanet_catalog, aes(y=detection_type,x=discovered))
         e <- e + geom_count( aes(colour=..n.., size=..n..), show.legend=NA, na.rm=TRUE )
-#        e <- e + labs( title='Number of discoveries by year and type of detection' )
         e <- e + labs( x='Year of Discovery', y='Detection Type' )
-#        e <- e + labs( colour="Discoveries' numbers" )
         
 ```
 ```{r confirmations}
